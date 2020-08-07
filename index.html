@@ -445,16 +445,21 @@
 						<h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Contactanos</h3>
 						<h5 class="text-dark mb-5">¿Tenes dudas o queres saber más? <br>Escribenos y te responderemos a
 							la brevedad</h5>
-						<form>
+						<form onsubmit="return false">
+							<div class="row">
+								<div class="col-sm-12 center">
+									<div id="result"></div>
+								</div>
+							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<input type="text" class="form-control" id="name" placeholder="Nombre*">
+										<input type="text" class="form-control" name="name" id="name" placeholder="Nombre*">
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<input type="email" class="form-control" id="mail" placeholder="Email*">
+										<input type="email" class="form-control" name="email" id="email" placeholder="Email*">
 									</div>
 								</div>
 								<div class="col-sm-12">
@@ -464,7 +469,10 @@
 									</div>
 								</div>
 								<div class="col-sm-12">
-									<a href="#" class="btn btn-secondary">Enviar</a>
+									<button class="btn btn-secondary" id="submit_btn_contact">Enviar</button>
+									<div class="spinner-border text-success" style="display:none;" id="spinner" role="status">
+										<span class="sr-only">Loading...</span>
+									  </div>
 								</div>
 							</div>
 						</form>

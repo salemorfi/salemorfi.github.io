@@ -145,3 +145,62 @@
 
 	});
 })(jQuery);
+
+
+//Contact Us
+$("#submit_btn_contact").click(function () {
+	//get input field values
+	var user_name = $('#name').val();
+	var user_email = $('#email').val();
+	var user_message = $('#message').val();
+
+	var button = $('#submit_btn_contact');
+	var spinner = $('#spinner');
+
+	button.attr("disabled", true);
+	spinner.show();
+
+	//simple validation at client's end
+	var post_data, output;
+	var proceed = true;
+	if (user_name == "") {
+		proceed = false;
+	}
+	if (user_email == "") {
+		proceed = false;
+	}
+	if (user_message == "") {
+		proceed = false;
+	}
+
+	//everything looks good! proceed...
+	if (proceed) {
+		//data to be sent to server
+		post_data = {
+			'name': user_name,
+			'email': user_email,
+			'message': user_message
+		};
+
+		//Ajax post data to server
+		$.post('contact.php', post_data, function (response) {
+			button.attr("disabled", false);
+			spinner.hide();
+
+			//load json data from server and output message
+			if (response.type == 'error') {
+				output = '<div class="alert alert-danger" style="padding:10px; margin-bottom:25px;">' + response.text + '</div>';
+			} else {
+				output = '<div class="alert alert-success" style="padding:10px; margin-bottom:25px;">' + response.text + '</div>';
+
+				//reset values in all input fields
+				$('#name').val('');
+				$('#email').val('');
+				$('#message').val('');
+			}
+
+			$("#result").hide().html(output).slideDown();
+		}, 'json');
+
+	}
+});
