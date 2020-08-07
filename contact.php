@@ -27,8 +27,8 @@ try {
     //587 default
     //Recipients
     $mail->setFrom($user_Email);
-    // $mail->addAddress('info@salemorfi.com.ar');     // Add a recipient
-    $mail->addAddress('sebasf8@gmail.com');     // Add a recipient
+    $mail->addAddress('info@salemorfi.com.ar');     // Add a recipient
+    $mail->addAddress('morfisale@gmail.com');     // Add a recipient
 
     $mail->addReplyTo($user_Email);
 
