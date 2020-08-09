@@ -10,7 +10,9 @@
 	-ms-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
-	min-height: 700px;
+	min-height: 620px;
+	display: flex;
+	flex-flow: column;
 	.title-text {
 		color: theme-color(dark);
 	}
@@ -19,6 +21,9 @@
 	}
 	img {
 		margin-bottom: 37px;
+	}
+	.pricing-box-content{
+		flex: 1 1 auto;
 	}
 	.pricing-list {
 		list-style: none;

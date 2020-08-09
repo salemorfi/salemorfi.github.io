@@ -160,7 +160,8 @@ $("#contact-form").submit(function (event) {
 	https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity
 	*/
 	if (vForm[0].checkValidity() === false) {
-		
+		// Add bootstrap 4 was-validated classes to trigger validation messages
+		vForm.addClass('was-validated');
 	} else {
 
 		//get input field values
@@ -224,6 +225,5 @@ $("#contact-form").submit(function (event) {
 
 	}
 
-	// Add bootstrap 4 was-validated classes to trigger validation messages
-	vForm.addClass('was-validated');
+
 });

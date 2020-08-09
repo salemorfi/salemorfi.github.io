@@ -18977,7 +18977,9 @@ section {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  min-height: 700px;
+  min-height: 620px;
+  display: flex;
+  flex-flow: column;
 }
 
 .pricing-box .title-text {
@@ -18990,6 +18992,10 @@ section {
 
 .pricing-box img {
   margin-bottom: 37px;
+}
+
+.pricing-box .pricing-box-content {
+  flex: 1 1 auto;
 }
 
 .pricing-box .pricing-list {
