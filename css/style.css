@@ -19032,6 +19032,10 @@ section {
   color: #ffffff;
 }
 
+.faq-header {
+  cursor: pointer;
+}
+
 /*-------------------------------------------------------------------*/
 /* === Components === */
 .btn {
