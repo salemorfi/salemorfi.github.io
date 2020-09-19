@@ -19066,6 +19066,13 @@ section {
   height: auto;
 }
 
+.form-control:focus {
+  border: 1px solid #6610f2;
+  font-weight: 400;
+  font-size: 14px;
+  height: auto;
+}
+
 /* Toggle Switch */
 .toggle-switch {
   position: relative;
