@@ -42,13 +42,13 @@ $colors: (
 
 $theme-colors: (
   // primary:         #3c37f1,
-  primary:         #168001,
-  secondary:       #43b32d,
-  success:         #fd9707,
+  primary:         #5014aa,
+  secondary:       #6200ea,
+  success:         #8cd200,
   info:            #00b3ff,
   warning:         #ffe671,
   danger:          #ff696d,
-  light:           #fd6907,
+  light:           #bee66e,
   dark:            #000000
 );
 
@@ -132,7 +132,7 @@ $action-transition-duration: 0.25s;
 $action-transition-timing-function: ease;
 
 // $testimonial-bg:#a70ff6 url("../images/testimonial-bg.svg");
-$testimonial-bg:#fd9707;
+$testimonial-bg:#8cd200;
 $testimonial-nav-color:#d8d8d8;
 
 $input-padding-y: 1.25rem;

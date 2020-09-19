@@ -5,8 +5,8 @@ html {
 
 .home {
 	background: $header-bg;
-	background-repeat-y: no-repeat;
-	background-position: 0 -50px;
+	background-repeat: no-repeat;
+	background-position: 0 -0px;
 	padding-top: 103px;
 	@media (max-width: 991px) {
 		padding-top: 71px;
@@ -14,7 +14,7 @@ html {
 }
 
 .main-banner {
-	padding: 4.2rem 0 14rem 0;
+	padding: 1rem 0 14rem 0;
 	color: $white;
 	background-size: cover;
 	@media (max-width: 991px) {
@@ -26,6 +26,10 @@ html {
 		@media (max-width: 991px) {
 			width: 100%;
 		}
+	}
+	.banner-text {
+		// width: 56%;
+			padding: 5rem 0 0 0;
 	}
 }
 
