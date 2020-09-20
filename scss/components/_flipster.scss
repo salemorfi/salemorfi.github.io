@@ -23,11 +23,11 @@
 			width: 10px;
 			height: 10px;
 			border-radius: 100%;
-			border: 1px solid $border-color;
+			border: 1px solid $border-flipster;
 			// background: $border-color;
 			margin-right: 1rem;
 			&.active {
-				background: $border-color;
+				background: $border-flipster;
 			}
 		}
 	}

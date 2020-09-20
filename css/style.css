@@ -18889,9 +18889,10 @@ section {
 }
 
 .testimonial {
-  background: #57a000;
+  background: #f4f4f4;
   padding: 100px 0 70px 0;
   background-size: cover;
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -19226,12 +19227,12 @@ section {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  border: 1px solid #f1efef;
+  border: 1px solid #383838;
   margin-right: 1rem;
 }
 
 .flipster-custom-nav .flipster-custom-nav-item .flipster-custom-nav-link.active {
-  background: #f1efef;
+  background: #383838;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

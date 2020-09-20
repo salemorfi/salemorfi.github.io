@@ -17,6 +17,7 @@ $white-smoke:       #f2f7f8;
 $violet:            #41478a;
 $darkslategray :    #2e383e;
 $dodger-blue :      #3498db;
+$light-grey:        #f4f4f4;
 
 
 $colors: (
@@ -68,6 +69,7 @@ $theme-gradient-colors: (
 ////////// COLOR VARIABLES //////////
 $content-bg: #fff;
 $border-color: #f1efef;
+$border-flipster: #383838;
 $border-color-focus: $indigo;
 
 ////////// COLOR VARIABLES //////////
@@ -133,7 +135,7 @@ $action-transition-duration: 0.25s;
 $action-transition-timing-function: ease;
 
 // $testimonial-bg:#a70ff6 url("../images/testimonial-bg.svg");
-$testimonial-bg:#57a000;
+$testimonial-bg: $light-grey;
 $testimonial-nav-color:#d8d8d8;
 
 $input-padding-y: 1.25rem;
