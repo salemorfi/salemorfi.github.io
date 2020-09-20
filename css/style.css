@@ -18617,7 +18617,9 @@ h6, .h6 {
 
 @media (max-width: 991px) {
   .navbar {
+    padding: 0rem 0rem;
     height: 71px;
+    text-align: center;
   }
 }
 
@@ -18627,13 +18629,19 @@ h6, .h6 {
   font-weight: 500;
 }
 
+@media (max-width: 991px) {
+  .navbar .navbar-brand {
+    padding-left: 3rem;
+  }
+}
+
 .navbar .navbar-brand img {
-  width: 60px;
+  height: 70px;
 }
 
 @media (max-width: 991px) {
   .navbar .navbar-brand img {
-    width: 60px;
+    height: 70px;
   }
 }
 

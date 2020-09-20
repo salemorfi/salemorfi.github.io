@@ -1,19 +1,23 @@
 .navbar {
 	width: 100%;
-	// padding: 1.875rem 1rem;
+	padding: 0rem 0rem;
 	background: theme-color(primary);
 	@media (max-width: 991px) {
-		// padding: .87rem 1rem;
+		padding: 0rem 0rem;
 		height: $mobile-header-height;
+		text-align: center;
 	}
 	.navbar-brand {
 		font-size: 1.75rem;
 		color: $header-color;
 		font-weight: 500;
+		@media (max-width: 991px) {
+			padding-left: 3rem;
+		}
 		img {
-			width: 60px;
+			height: 70px;
 			@media (max-width: 991px) {
-				width: 60px;
+				height: 70px;
 			}
 		}
 	}
