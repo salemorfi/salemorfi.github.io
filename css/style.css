@@ -18628,6 +18628,7 @@ h6, .h6 {
   font-size: 1.75rem;
   color: #fff;
   font-weight: 500;
+  padding: 1rem;
 }
 
 @media (max-width: 991px) {
@@ -18637,12 +18638,12 @@ h6, .h6 {
 }
 
 .navbar .navbar-brand img {
-  height: 70px;
+  height: 60px;
 }
 
 @media (max-width: 991px) {
   .navbar .navbar-brand img {
-    height: 70px;
+    height: 60px;
   }
 }
 
