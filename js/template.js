@@ -18,6 +18,29 @@
 				}
 			}
 		})
+
+		$('#owl-carousel-main').owlCarousel({
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			margin: 0,
+			dots: true,
+			loop: true,
+			singleItem: true,
+			center: true,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				500: {
+					items: 1,
+				},
+				768: {
+					items: 1,
+				}
+			} 
+		})
+
 		var wWidth = $(window).width();
 		var menuWidth = $(".navbar-collapse").width();
 		$(".navbar-toggler").click(function () {

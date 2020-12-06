@@ -19004,7 +19004,9 @@ section {
 }
 
 .pricing-container {
-  background-size: fit;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
   background-image: url("../images/background-plans.jpg");
 }
 
@@ -19255,5 +19257,13 @@ section {
 .flipster-custom-nav .flipster-custom-nav-item .flipster-custom-nav-link.active {
   background: #383838;
 }
+
+.example-img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  max-height: 620px;
+  width:auto!important;
+}
+
 
 /*# sourceMappingURL=maps/style.css.map */
