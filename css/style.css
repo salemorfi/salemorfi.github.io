@@ -19265,5 +19265,26 @@ section {
   width:auto!important;
 }
 
+.benefits {
+  background: #f4f4f4;
+  padding: 100px 0 70px 0;
+  background-size: cover;
+  color: black;
+}
+
+.our-process {
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-image: url("../images/background-intermission.jpg");
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.our-process .tab-content .row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 
 /*# sourceMappingURL=maps/style.css.map */
