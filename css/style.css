@@ -18821,22 +18821,28 @@ html {
 }
 
 .home {
-  background: url("../images/banner-bg.svg");
-  background-repeat: no-repeat;
-  background-position: 0 -0px;
-  padding-top: 103px;
+  /* background-position: 0 -0px; */
+  /* padding-top: 103px; */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-image: url("../images/FondoWeb-02.svg");
 }
 
 @media (max-width: 991px) {
   .home {
-    padding-top: 71px;
+    /* padding-top: 71px; */
   }
 }
 
 .main-banner {
   padding: 1rem 0 14rem 0;
-  color: #ffffff;
+  color: black;
   background-size: cover;
+}
+
+.banner-text {
+  padding-top: 20px!important;
 }
 
 @media (max-width: 991px) {
@@ -18995,6 +19001,11 @@ section {
   min-height: 760px;
   display: flex;
   flex-flow: column;
+}
+
+.pricing-container {
+  background-size: fit;
+  background-image: url("../images/background-plans.jpg");
 }
 
 .pricing-box .title-text {
