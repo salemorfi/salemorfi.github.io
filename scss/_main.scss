@@ -1,0 +1,83 @@
+body,
+html {
+	overflow-x: hidden;
+}
+
+.home {
+	/* background-position: 0 -0px; */
+   /* padding-top: 103px; */
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   background-image: url("../images/FondoWeb-02.svg");
+   
+	@media (max-width: 991px) {
+		// padding-top: 71px;
+	}
+}
+
+.main-banner {
+	padding: 1rem 0 14rem 0;
+	color: $black;
+	background-size: cover;
+	@media (max-width: 991px) {
+		padding: 1rem;
+		margin-bottom: 50px;
+	}
+	.banner-title {
+		// width: 56%;
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+	}
+	.banner-text {
+		// width: 56%;
+			padding: 5rem 0 0 0;
+	}
+}
+
+.banner-text {
+	padding-top: 20px!important;
+}
+  
+
+section {
+	padding: 120px 0 0 0;
+	@media (max-width: 1024px) {
+		padding: 130px 0 0 0;
+	}
+	@media (max-width: 991px) {
+		padding: 70px 0 0 0;
+	}
+}
+
+.services-box {
+	padding: 10px 100px 40px 0;
+	@media (max-width: 991px) {
+		padding: 10px 10px 40px 0;
+	}
+	&:hover {
+		img {
+			-webkit-filter: grayscale(100%);
+			/* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			-webkit-transition: all 2s;
+			-moz-transition: all 2s;
+			-ms-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+		}
+	}
+}
+
+.tick-icon {
+	width: 20px;
+	height: 20px;
+}
+.example-img {
+   -webkit-filter: drop-shadow(5px 5px 5px #222);
+   filter: drop-shadow(5px 5px 5px #222);
+   max-height: 620px;
+   width:auto!important;
+ }
+
