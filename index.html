@@ -26,6 +26,21 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-174989051-1');
+		gtag('config', 'AW-605268527');
+
+
+		function gtag_report_conversion(url) {
+			var callback = function () {
+				if (typeof(url) != 'undefined') {
+				window.location = url;
+				}
+			};
+			gtag('event', 'conversion', {
+				'send_to': 'AW-605268527/aVDxCMiD7fwBEK_UzqAC',
+				'event_callback': callback
+			});
+			return false;
+		}
 	</script>
 
 	<!-- Facebook Pixel Code -->
@@ -107,8 +122,8 @@
 										<h4>Olvidate de las comisiones</h4>
 									</div>
 									<a href="#" onClick="window.open('https://app.salemorfi.com.ar/#restaurants/DqHKFEsXYaKC0tIiHioI?delivery=true','Sale Morfi','resizable,height=736,width=414'); return false;" target="_blank" class="btn btn-success mt-3 ml-3">Mirá una carta</a>
-									<a href="https://platform.salemorfi.com.ar/register" target="_blank"
-										class="btn btn-success mt-3 ml-3">Sumá tu marca</a>
+									<a href="#" target="_blank"
+										class="btn btn-success mt-3 ml-3" onClick="gtag_report_conversion('https://platform.salemorfi.com.ar/register')">Sumá tu marca</a>
 								</div>
 								<div class="mt-5 mt-lg-0" style="margin-left: 4px; margin-right: 20px; width: 50%">
 									<div class="owl-carousel owl-theme" id="owl-carousel-main">
